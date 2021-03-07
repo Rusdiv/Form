@@ -46,24 +46,26 @@ export default {
       } else {
         this.errorPassword = false;
       }
-      axios({
-        method: "post",
-        url: "/API",
-        data: {
-          login: this.loginValue,
-          password: this.passwordValue,
-        },
-        headers: {
-          "Content-type": "application/json; charset=UTF-8",
-        },
-      })
-        .then((response) => {
-          response.data.status === "Неправильный логин или пароль";
-          this.error = "Неправильный логин или пароль";
+      if (this.errorPassword === false && this.errorLogin === false) {
+        axios({
+          method: "post",
+          url: "/API",
+          data: {
+            login: this.loginValue,
+            password: this.passwordValue,
+          },
+          headers: {
+            "Content-type": "application/json; charset=UTF-8",
+          },
         })
-        .catch(function(error) {
-          console.log(error);
-        });
+          .then((response) => {
+            response.data.status === "Неправильный логин или пароль";
+            this.error = "Неправильный логин или пароль";
+          })
+          .catch(function(error) {
+            console.log(error);
+          });
+      }
 
       e.preventDefault();
     },

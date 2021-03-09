@@ -1,14 +1,14 @@
 <template>
   <form class="form" @submit="checkForm">
     <input
-      class="input"
-      :class="{ error: errorLogin }"
+      class="form__input"
+      :class="{ 'form-error': errorLogin }"
       v-model.trim="loginValue"
       placeholder="Логин"
     />
     <input
-      class="input"
-      :class="{ error: errorPassword }"
+      class="form__input"
+      :class="{ 'form-error': errorPassword }"
       v-model.trim="passwordValue"
       placeholder="Пароль"
     />
@@ -73,19 +73,3 @@ export default {
 };
 </script>
 
-<style scoped>
-.input {
-  max-width: 100%;
-  width: calc(100% - 20px);
-  background: #efeded;
-  border-radius: 10px;
-  border: none;
-  padding: 20px 0 20px 20px;
-  outline: none;
-  margin-bottom: 32px;
-}
-
-.error {
-  background: #f8d1d1;
-}
-</style>

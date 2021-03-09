@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import AuthPage from "./components/AuthPage.vue";
+import AuthPage from "./pages/AuthPage.vue";
 
 export default {
   name: "App",

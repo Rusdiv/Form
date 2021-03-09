@@ -1,0 +1,14 @@
+.form__input {
+  max-width: 100%;
+  width: calc(100% - 20px);
+  background: #efeded;
+  border-radius: 10px;
+  border: none;
+  padding: 20px 0 20px 20px;
+  outline: none;
+  margin-bottom: 32px;
+}
+
+.form-error {
+  background: #f8d1d1;
+}

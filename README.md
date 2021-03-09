@@ -19,6 +19,7 @@ npm run build
 ```
 npm run lint
 ```
+Поменять адресс запроса
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

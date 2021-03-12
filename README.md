@@ -1,4 +1,4 @@
-# vue-from
+# Nemezida SIEM fronend
 
 ## Project setup
 ```

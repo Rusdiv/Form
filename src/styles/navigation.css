@@ -1,0 +1,52 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: #000;
+  color: aliceblue;
+}
+
+.navigation__item {
+  list-style: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  background: #f2f2f2;
+  border-radius: 8px;
+  color: #000;
+  width: 188px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.closed {
+  cursor: wait;
+  background: #828282;
+  position: relative;
+}
+
+.closed::after {
+  content: "";
+  width: 12px;
+  height: 14px;
+  top: 30%;
+  right: 10px;
+  background: url("../assets/lock.svg");
+  position: absolute;
+}
+
+.navigation__logo-block {
+  width: 132px;
+}
+
+.navigation__list {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}

@@ -1,0 +1,65 @@
+.sidebar {
+  max-width: 132px;
+  background: #000;
+  height: calc(100% - 104px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.sidebar__list {
+  padding: 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 0;
+}
+
+.sidebar__item {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+.sidebar__item:last-child {
+  margin-bottom: 50px;
+}
+
+.sidebar__home-button {
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 35px; 
+}
+
+.sidebar-button {
+  width: 26px;
+  height: 26px;
+  outline: none;
+  cursor: pointer;
+  background-color: #000;
+  background-image: url('../assets/homeButton.svg');
+  background-position: center;
+  border: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.sidebar-graph {
+  background-image: url('../assets/graphButton.svg');
+}
+
+.sidebar-man {
+  background-image: url('../assets/manButton.svg');
+}
+
+.sidebar-setting {
+  background-image: url('../assets/settingButton.svg');
+}
+
+.sidebar-exit {
+  background-image: url('../assets/exitButton.svg');
+}

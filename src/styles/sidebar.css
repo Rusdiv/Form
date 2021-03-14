@@ -1,7 +1,7 @@
 .sidebar {
   max-width: 132px;
   background: #000;
-  height: calc(100% - 104px);
+  height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;

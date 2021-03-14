@@ -1,0 +1,135 @@
+.leftBlock {
+  max-width: 605px;
+  height: calc(100% - 15px);
+  position: absolute;
+  top: 10px;
+  left: 170px;
+}
+
+.leftBlock__inputBlock {
+  display: flex;
+  height: 40px;
+}
+
+.leftBlock__input {
+  background: #f5f5f7;
+  border-radius: 8px;
+  width: calc(100% - 188px);
+  border: none;
+  padding: 15px 50px;
+  outline: none;
+  font-family: " ";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.leftBlock__button {
+  width: 188px;
+  background: #000000;
+  border-radius: 8px;
+  color: #fff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+.leftBlock__content {
+  background: #f5f5f7;
+  border-radius: 14px;
+  width: 100%;
+  margin-top: 25px;
+  height: calc(100% - 60px - 26px);
+  position: relative;
+}
+
+.leftBlock__content::after {
+  content: "";
+  background-image: url("../assets/corner.svg");
+  position: absolute;
+  bottom: -8px;
+  right: -10px;
+  width: 60px;
+  height: 60px;
+}
+
+.rightBlock {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: calc(100% - 454px - 202px);
+  height: calc(100% - 10px);
+}
+
+
+.rightBlock__window {
+  height: calc(50% - 15px);
+  background: #f5f5f7;
+  border-radius: 14px;
+  position: relative;
+}
+
+.rightBlock__window:last-child {
+  margin-top: 20px;
+}
+
+.rightBlock__window::after {
+  content: "";
+  background-image: url("../assets/corner.svg");
+  position: absolute;
+  bottom: -8px;
+  right: -10px;
+  width: 60px;
+  height: 60px;
+}
+
+.rightBlock__title {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+  background: #000000;
+  border-radius: 14px;
+  align-items: center;
+  height: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+}
+
+.rightBlock__select {
+  position: relative;
+}
+
+.rightBlock__select::after {
+  content: "";
+  background-image: url("../assets/arrow.svg");
+  width: 17px;
+  height: 9px;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  right: -27px;
+  transform: translate(0, -50%);
+}
+
+.rightBlock__settings {
+  border: none;
+  outline: none;
+  width: 24px;
+  height: 24px;
+  background-image: url("../assets/windowSettings.svg");
+  background-position: center;
+  background-color: transparent;
+  cursor: pointer;
+}

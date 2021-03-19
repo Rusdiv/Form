@@ -1,5 +1,23 @@
+@keyframes slide {
+  0% {
+    right: -40px;
+  }
+  100% {
+    right: 10px;
+  }
+}
+
+@keyframes slideR {
+  0% {
+    right: 10px;
+  }
+  100% {
+    right: -40px;
+  }
+}
+
 .sidebar {
-  max-width: 132px;
+  width: 132px;
   background: #000;
   height: 100%;
   display: flex;
@@ -32,7 +50,7 @@
   top: 0;
   left: 50%;
   transform: translate(-50%);
-  margin-top: 35px; 
+  margin-top: 35px;
 }
 
 .sidebar-button {
@@ -41,7 +59,7 @@
   outline: none;
   cursor: pointer;
   background-color: #000;
-  background-image: url('../assets/homeButton.svg');
+  background-image: url('../assets/sidebar/homeButton.svg');
   background-position: center;
   border: none;
   background-size: contain;
@@ -49,17 +67,78 @@
 }
 
 .sidebar-graph {
-  background-image: url('../assets/graphButton.svg');
+  background-image: url('../assets/sidebar/graphButton.svg');
 }
 
 .sidebar-man {
-  background-image: url('../assets/manButton.svg');
+  background-image: url('../assets/sidebar/manButton.svg');
 }
 
 .sidebar-setting {
-  background-image: url('../assets/settingButton.svg');
+  background-image: url('../assets/sidebar/settingButton.svg');
 }
 
 .sidebar-exit {
-  background-image: url('../assets/exitButton.svg');
+  background-image: url('../assets/sidebar/exitButton.svg');
+}
+
+.sidebar-openButton {
+  display: none;
+}
+
+.sidebar__white {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding-left: 10px;
+}
+
+@media (max-width: 1120px) {
+  .sidebar {
+    position: fixed;
+    width: 40px;
+    height: 45%;
+    bottom: 20px;
+    right: 10px;
+    z-index: 10;
+    border-radius: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .sidebar.show {
+    display: flex;
+    animation: 0.3s linear slide;
+  }
+
+  .sidebar.hide {
+    animation: 0.3s linear slideR;
+    right: -50px;
+  }
+
+  .sidebar__item {
+    margin-bottom: 10px;
+  }
+
+  .sidebar-openButton {
+    display: block;
+    position: fixed;
+    z-index: 11;
+    bottom: 20px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+    background-position: center;
+    background-size: contain;
+    border: none;
+    outline: none;
+    background-image: url(../assets/sidebar/user.png);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .sidebar__home-button {
+    top: 0;
+    margin-top: 10px;
+  }
 }

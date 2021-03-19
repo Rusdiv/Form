@@ -8,7 +8,7 @@
 
 .navigation__item {
   list-style: none;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: bold;
   font-size: 13px;
@@ -25,6 +25,10 @@
   cursor: pointer;
 }
 
+.navigation__select {
+  display: none;
+}
+
 .closed {
   cursor: wait;
   background: #828282;
@@ -32,12 +36,12 @@
 }
 
 .closed::after {
-  content: "";
+  content: '';
   width: 12px;
   height: 14px;
   top: 30%;
   right: 10px;
-  background: url("../assets/lock.svg");
+  background: url('../assets/lock.svg');
   position: absolute;
 }
 
@@ -49,4 +53,94 @@
   width: 100%;
   display: flex;
   justify-content: space-around;
+}
+
+.navigation__list-button {
+  display: none;
+  width: 132px;
+  height: 100px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-size: 35px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  background-repeat: no-repeat;
+  background-image: url('../assets/navigation/cross.svg');
+}
+
+@media (max-width: 1120px) {
+  .navigation__item {
+    margin: 10px;
+  }
+
+  .navigation__list-button {
+    display: block;
+  }
+
+  .navigation__select {
+    display: flex;
+    color: #000;
+    position: absolute;
+    top: 20px;
+  }
+
+  .disableButtons {
+    display: none;
+  }
+
+  .navigation__select-options {
+    position: absolute;
+    top: 45px;
+    display: none;
+  }
+
+  .navigation__select-options.showOption {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navigation__select::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-image: url('../assets/navigation/arrow.svg');
+    background-position: center;
+    top: 10px;
+    right: 5px;
+  }
+
+  .navigation__list {
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    align-items: center;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    position: fixed;
+    background: #000;
+    z-index: 0;
+    width: 100%;
+    transition: 1s;
+    height: 100%;
+  }
+
+  .navigation__list.show {
+    transition: 1s;
+    z-index: 12;
+  }
+
+  .navigation__list-button.show {
+    width: 40px;
+    height: 40px;
+  }
+
+  .show {
+    opacity: 1;
+    transition: 1s;
+  }
 }

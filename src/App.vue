@@ -1,5 +1,5 @@
 <template>
-  <MainPage />
+  <MainPage v-if="true"/>
   <template v-if="false">
     <AuthPage />
   </template>

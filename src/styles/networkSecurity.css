@@ -151,4 +151,8 @@
     top: 0;
     left: 0;
   }
+
+  .rightBlock__window {
+    height: 100%;
+  }
 }

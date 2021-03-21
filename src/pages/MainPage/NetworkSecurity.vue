@@ -13,6 +13,9 @@
         <div class="rightBlock__name">IDS/IPS</div>
         <button class="rightBlock__settings"></button>
       </div>
+      <div class="rightBlock__graph">
+        <chart-line></chart-line>
+      </div>
     </div>
     <div class="rightBlock__window">
       <div class="rightBlock__title">
@@ -25,7 +28,10 @@
 </template>
 
 <script>
+import ChartLine from '../../components/Chart/Graph.vue';
+
 export default {
-  name: "NetworkSecurity",
+  name: 'NetworkSecurity',
+  components: { ChartLine }
 };
 </script>

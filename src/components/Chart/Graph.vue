@@ -15,9 +15,6 @@ export default {
 	},
 	mounted() {
 		const ctx = document.getElementById('planet-chart');
-		const parentHeight = ctx.parentNode.parentElement.clientHeight;
-		ctx.style.height = `${parentHeight}px`;
-		console.log(parentHeight);
 		new Chart(ctx, this.planetChartData, {
 			responsive: true,
 			maintainAspectRatio: false,

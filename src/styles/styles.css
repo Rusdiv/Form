@@ -4,6 +4,7 @@
 @import "./normalize.css";
 @import "./sidebar.css";
 @import "./networkSecurity.css";
+@import "./home.css";
 
 html {
   width: 100%;
@@ -25,6 +26,6 @@ body {
 }
 
 .content {
-  height: calc(100% - 104px);
+  height: 100%;
   position: relative;
 }

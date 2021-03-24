@@ -3,8 +3,8 @@
     <Navigation />
     <div class="content">
       <Sidebar />
-      <NetworkSecurity v-if="false" />
-      <Home v-if="true" />
+      <NetworkSecurity v-if="true" />
+      <Home v-if="false" />
     </div>
   </div>
 </template>

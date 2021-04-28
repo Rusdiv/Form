@@ -12,7 +12,11 @@
         <button class="sidebar__button sidebar-button sidebar-man"></button>
       </li>
       <li class="sidebar__item ">
-        <button class="sidebar__button sidebar-button sidebar-setting"></button>
+        <router-link to="/settings">
+          <button
+            class="sidebar__button sidebar-button sidebar-setting"
+          ></button>
+        </router-link>
       </li>
       <li class="sidebar__item ">
         <button class="sidebar__button sidebar-button sidebar-exit"></button>

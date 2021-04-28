@@ -11,6 +11,11 @@ const routes = [
     path: '/NetworkSecurity',
     name: 'NetworkSecurity',
     component: () => import('./pages/MainPage/NetworkSecurity')
+  },
+  {
+    path: '/settings',
+    name: 'Settings',
+    component: () => import('./pages/MainPage/Settings')
   }
 ];
 

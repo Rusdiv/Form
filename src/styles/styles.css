@@ -1,10 +1,11 @@
-@import "./button.css";
-@import "./form.css";
-@import "./navigation.css";
-@import "./normalize.css";
-@import "./sidebar.css";
-@import "./networkSecurity.css";
-@import "./home.css";
+@import './button.css';
+@import './form.css';
+@import './navigation.css';
+@import './normalize.css';
+@import './sidebar.css';
+@import './networkSecurity.css';
+@import './home.css';
+@import './settings.css';
 
 html {
   width: 100%;
@@ -28,4 +29,9 @@ body {
 .content {
   height: 100%;
   position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }

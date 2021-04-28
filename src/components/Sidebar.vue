@@ -1,7 +1,9 @@
 <template>
   <button @click="openSidebar" class="sidebar-openButton"></button>
-  <div class="sidebar" :class="{ show: showSidebar , hide: !showSidebar}" >
-    <button class="sidebar__home-button sidebar-button"></button>
+  <div class="sidebar" :class="{ show: showSidebar, hide: !showSidebar }">
+    <router-link to="/">
+      <button class="sidebar__home-button sidebar-button"></button>
+    </router-link>
     <ul class="sidebar__list">
       <li class="sidebar__item ">
         <button class="sidebar__button sidebar-button sidebar-graph"></button>

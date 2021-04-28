@@ -1,17 +1,17 @@
 <template>
-  <MainPage v-if="true"/>
+  <MainPage />
   <template v-if="false">
     <AuthPage />
   </template>
 </template>
 
 <script>
-import AuthPage from "./pages/AuthPage.vue";
-import MainPage from "./pages/MainPage/MainPage.vue";
+import AuthPage from './pages/AuthPage.vue';
+import MainPage from './pages/MainPage/MainPage.vue';
 
 export default {
-  name: "App",
-  components: { AuthPage, MainPage },
+  name: 'App',
+  components: { AuthPage, MainPage }
 };
 </script>
 

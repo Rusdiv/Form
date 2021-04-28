@@ -21,7 +21,7 @@
             class="navigation__item"
             :class="{ closed: item.closed }"
           >
-            {{ item.text }}
+            <router-link :to="item.url">{{ item.text }}</router-link>
           </li>
         </div>
       </div>
@@ -36,7 +36,7 @@
         class="navigation__item disableButtons"
         :class="{ closed: item.closed }"
       >
-        {{ item.text }}
+        <router-link :to="item.url">{{ item.text }}</router-link>
       </li>
     </ul>
   </nav>
@@ -52,23 +52,28 @@ export default {
       navItems: [
         {
           text: 'Network Security',
-          closed: false
+          closed: false,
+          url: '/NetworkSecurity'
         },
         {
           text: 'Neural Network',
-          closed: false
+          closed: false,
+          url: 'NeuralNetwork'
         },
         {
           text: 'Sandbox',
-          closed: true
+          closed: true,
+          url: 'NetworkSecurity'
         },
         {
           text: 'Search Vulnerabilities',
-          closed: true
+          closed: true,
+          url: 'SearchVulnerabilities'
         },
         {
           text: 'Access Control',
-          closed: true
+          closed: true,
+          url: 'AccessControl'
         }
       ]
     };

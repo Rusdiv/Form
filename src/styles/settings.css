@@ -1,7 +1,11 @@
 .settings {
   position: absolute;
+  width: calc(100% - 152px);
   top: 0;
   left: 140px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .settings__about {
@@ -27,6 +31,10 @@
 }
 
 .settings__list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   list-style: none;
   display: flex;
 }
@@ -47,7 +55,7 @@
   text-align: center;
   letter-spacing: 0.02em;
   color: #fff;
-  margin-left: 100px;
+  /* margin-left: 100px; */
 }
 
 .settings__item:first-child {

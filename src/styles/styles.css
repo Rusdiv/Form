@@ -6,6 +6,7 @@
 @import './networkSecurity.css';
 @import './home.css';
 @import './settings.css';
+@import './proxy.css';
 
 html {
   width: 100%;

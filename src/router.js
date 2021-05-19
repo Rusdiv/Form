@@ -16,6 +16,11 @@ const routes = [
     path: '/settings',
     name: 'Settings',
     component: () => import('./pages/MainPage/Settings')
+  },
+  {
+    path: '/settings/proxy',
+    name: 'SettingsProxy',
+    component: () => import('./pages/SettingsPage/ProxyPage')
   }
 ];
 

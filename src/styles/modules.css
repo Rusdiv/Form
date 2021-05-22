@@ -1,0 +1,24 @@
+.modules {
+  position: absolute;
+  width: calc(100% - 152px);
+  top: 0;
+  left: 140px;
+}
+
+.modules__item {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.modules__popup {
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  background: rgb(212, 212, 212);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
